@@ -1,0 +1,15 @@
+---
+application:
+  name: "databasetoui"
+  project: "satz"
+  organization: "QoveryCommunity"
+databases:
+- type: "POSTGRESQL"
+  name: "medium"
+  version: "11"
+routers:
+- name: "main-databasetoui"
+  routes:
+  - application_name: "databasetoui"
+    paths:
+    - "/*"
